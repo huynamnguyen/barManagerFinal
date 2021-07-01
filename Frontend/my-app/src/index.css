@@ -1,0 +1,16 @@
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background-color: #272b30;
+  color: #d6d6d6;
+}
+
+.color-red {
+  color: #fc2d55;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0px;
+}

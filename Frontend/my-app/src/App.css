@@ -1,0 +1,277 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.home {
+	padding-left: 20vw;
+	padding-right: 20vw;
+}
+
+.row {
+	clear: both;
+}
+
+.rounded_border {
+	overflow:	hidden;
+	border: 2px solid #8D8D8D;
+	border-radius: 30px;
+}
+
+.rounded_border_r {
+	overflow:hidden;
+	border: 2px solid #FF0044;
+	border-radius: 30px;
+}
+
+.r1 {
+	border: 1px solid #8D8D8D;
+}
+
+.r1-top {
+	border: 1px solid #8D8D8D;
+	border-width: 0px 1px 1px 1px;
+}
+
+.r2 {
+	border: 2px solid #8D8D8D;
+	width: 100%;
+	position: relative;
+}
+
+.hidden_scroll {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.menu {
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: -15px;
+}
+
+.order_button {
+	position: relative;
+	min-width: 100%;
+	padding-top: 100%;
+}
+
+.admin_button {
+	position: relative;
+	min-width: 100%;
+	padding-top: 50%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.secondary_button {
+	position: relative;
+	min-width: 100%;
+	padding-top: 100%;
+}
+
+.centered {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	text-align:center;
+	transform: translate(0, -50%);
+}
+
+.text_centered {
+	display: inline-table;
+	vertical-align: middle;
+}
+
+.tgap30 {
+	margin-top: 25px;
+}
+
+h2 {
+	font-size: calc(30px + 2vmin);
+}
+
+.headline {
+	color: #FC2D55;
+}
+
+a .headline:hover {
+	opacity: 0.9;
+}
+
+
+.title {
+	background-color: #BA3B4F;
+	width: 100%;
+	color: #262B30;
+	text-align: center;
+	height: 5vh;
+}
+.cart_context {
+	height: 45vh;
+}
+
+.rock_bottom {
+	bottom: 0;
+}
+
+.bgap30 {
+	margin-bottom: 30px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.red_bg {
+	background-color: #BA3B4F;
+	color: #262B30;
+}
+
+.red_button {
+	background-color: #BA3B4F;
+	color: #262B30;
+	width: 100%;
+	border-color: #BA3B4F;
+	font-size: 1.2rem;
+}
+
+.red_button:hover {
+	background-color: #992336;
+	border-color: #992336;
+}
+
+.full-width {
+	width: 100%;
+}
+
+#callWaiter.active_button {
+	//box-shadow: 0px 0px 15px 2px rgba(135,255,87,0.44);
+	box-shadow: 0px 0px 15px 2px rgba(231,0,48,0.8);
+}
+
+#waiterService.active_button {
+	box-shadow: 0px 0px 15px 2px rgba(102,102,102,1);
+}
+
+.modal-content, .list-group-item {
+	background-color: #282c34;
+}
+
+.list-group-item {
+	border: 1px solid #8D8D8D;
+}
+
+.list-group-item.active {
+	background-color: rgba(186, 59, 79, 1);
+	border: 1px solid #8D8D8D;
+}
+
+.close {
+	color: #d6d6d6;
+	text-shadow: none;
+}
+
+.close:hover {
+	color: #FFF;
+}
+
+.inactive_room {
+	color: #A0223D;
+}
+
+.active_room {
+	color: #FF0044;
+}
+
+.notification {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	height: 20%;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+	color: #FFF;
+	font-size: calc(10px + 2vmin);
+	opacity: 0;
+	transition: opacity 0.5s linear;
+	z-index: 98;
+}
+
+.call.active {
+	background-color: #D01640;
+	opacity: 1;
+  transition: opacity 0.5s linear;
+}
+
+.w_service.active {
+	background-color: #666666;
+	opacity: 1;
+  transition: opacity 0.5s linear;
+	z-index: 99;
+}
+
+@media screen and (max-width: 768px) {
+	.rb {
+		border: 2px solid #8D8D8D;
+		border-radius: 20px;
+	}
+}
+
+@media screen and (max-width: 590px) {
+	.rb {
+		border: 2px solid #8D8D8D;
+		border-radius: 10px;
+		margin-top: 30px;
+	}
+	h2 {
+		font-size: calc(10px + 2vmin);
+	}
+	
+	.notification {
+		font-size: calc(8px + 2vmin);
+	}
+}
+
+.row.nm {
+	margin-left: 0;
+	margin-right: 0;
+}
